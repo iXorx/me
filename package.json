@@ -1,0 +1,28 @@
+{
+  "name": "me",
+  "version": "0.1.0",
+  "private": false,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "biome check",
+    "format": "biome format",
+    "type-check": "biome type-check"
+  },
+  "dependencies": {
+    "next": "15.1.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "biome": "^0.3.3",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.2",
+    "typescript": "^5"
+  },
+  "packageManager": "pnpm@8.6.12+sha1.a2f983fbf8f2531dc85db2a5d7f398063d51a6f3"
+}
