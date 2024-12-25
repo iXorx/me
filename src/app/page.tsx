@@ -1,11 +1,8 @@
 // import styles from "./page.module.css";
 
-import { Menu } from "@/components/menu/menu";
-
 export default function Home() {
   return (
     <>
-
     <main>
       <nav>
        <ul>
