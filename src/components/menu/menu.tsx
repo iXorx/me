@@ -3,16 +3,16 @@ export function Menu() {
     <nav>
       <ul>
         <li>
-          <a href="/accessibility">Accessibility</a>
+          <a href="/me/accessibility">Accessibility</a>
         </li>
         <li>
-          <a href="/speaker">Speaker</a>
+          <a href="/me/speaker">Speaker</a>
         </li>
         <li>
-          <a href="/mentoring">Mentoring</a>
+          <a href="/me/mentoring">Mentoring</a>
         </li>
         <li>
-          <a href="/comunidad">Comunidad</a>
+          <a href="/me/comunidad">Comunidad</a>
         </li>
       </ul>
     </nav>
