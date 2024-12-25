@@ -11,7 +11,10 @@ export default function Layout({
       <header>
       <Menu />
     </header>
+    <main>
+
         {children}
+    </main>
       </body>
     </html>
   );
