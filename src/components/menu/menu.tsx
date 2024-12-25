@@ -1,18 +1,20 @@
+import Link from "next/link";
+
 export function Menu() {
   return (
     <nav>
       <ul>
         <li>
-          <a href="/me/accessibility">Accessibility</a>
+          <Link href="/me/accessibility">Accessibility</Link>
         </li>
         <li>
-          <a href="/me/speaker">Speaker</a>
+          <Link href="/me/speaker">Speaker</Link>
         </li>
         <li>
-          <a href="/me/mentoring">Mentoring</a>
+          <Link href="/me/mentoring">Mentoring</Link>
         </li>
         <li>
-          <a href="/me/comunidad">Comunidad</a>
+          <Link href="/me/comunidad">Comunidad</Link>
         </li>
       </ul>
     </nav>
