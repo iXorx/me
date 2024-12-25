@@ -1,0 +1,52 @@
+.accessibility {
+	color: var(--white);
+	background-color: var(--accessibility);
+}
+
+.speaker {
+	color: var(--white);
+	background-color: var(--speaker);
+}
+
+.mentoring {
+	color: var(--white);
+	background-color: var(--mentoring);
+}
+
+.notes {
+	color: var(--white);
+	background-color: var(--notes);
+}
+
+.comunidad {
+	color: var(--background);
+	background-color: var(--comunidad);
+}
+
+.default {
+	color: var(--background);
+	background-color: var(--white);
+}
+
+.menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5rem 1rem;
+}
+
+.menuList {
+	margin: 0;
+	padding: 0;
+	list-style-type: '';
+	display: flex;
+	gap: 1rem;
+}
+
+.heading {
+	min-height: 8rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: 1px solid var(--background);
+}

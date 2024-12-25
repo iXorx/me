@@ -1,9 +1,26 @@
+import { Header, Section } from '@/components/header/Header'
+import Head from 'next/head'
+
 export default function Mentoring() {
-  return (
-    <>
-      <main>
-        <h1>Mentoring</h1>
-      </main>
-    </>
-  );
+	return (
+		<>
+			<Head>
+				<title>Mentor</title>
+				<meta name='theme-color' content='var(--mentoring)' />
+			</Head>
+			<Header section={Section.Mentoring}>Mentor</Header>
+			<main>
+				<p>
+					El mentoring es una relación de aprendizaje y crecimiento mutuo. Yo
+					soy mentor de varias personas y también tengo mis propios mentores. Es
+					una relación que se basa en la confianza, la escucha activa y la
+					empatía.
+				</p>
+				<p>
+					En esta sección encontrarás recursos que te ayudarán a ser un mejor
+					mentor o a encontrar un mentor que te ayude a crecer.
+				</p>
+			</main>
+		</>
+	)
 }

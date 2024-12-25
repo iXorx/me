@@ -1,0 +1,9 @@
+{
+	"bracketSpacing": true,
+	"jsxSingleQuote": true,
+	"plugins": ["@trivago/prettier-plugin-sort-imports"],
+	"semi": false,
+	"singleQuote": true,
+	"trailingComma": "es5",
+	"useTabs": true
+}

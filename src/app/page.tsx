@@ -1,26 +1,52 @@
-// import styles from "./page.module.css";
+import styles from './page.module.css'
+import Link from 'next/link'
 
 export default function Home() {
-  return (
-    <>
-    <main>
-      <nav>
-       <ul>
-        <li>
-          <a href="/accessibility">Accessibility</a>
-        </li>
-        <li>
-          <a href="/speaker">Speaker</a>
-        </li>
-        <li>
-          <a href="/mentoring">Mentoring</a>
-        </li>
-        <li>
-          <a href="/comunidad">Comunidad</a>
-        </li>
-       </ul>
-      </nav>
-    </main>
-    </>
-  );
+	return (
+		<>
+			<header>
+				<h1 className={styles.name}>Jordi Turull</h1>
+			</header>
+			<main>
+				<nav>
+					<ul>
+						<li>
+							<Link href='/accessibility'>Accessibility</Link>
+						</li>
+						<li>
+							<Link href='/speaker'>Speaker</Link>
+						</li>
+						<li>
+							<Link href='/mentoring'>Mentoring</Link>
+						</li>
+						<li>
+							<Link href='/comunidad'>Comunidad</Link>
+						</li>
+					</ul>
+				</nav>
+
+				<h2>Sobre mí</h2>
+				<p>
+					Con 15 años de experiencia en el mundo del desarrollo web, he
+					trabajado en empresas y proyectos de diferentes tamaños y sectores.
+				</p>
+				<p>
+					Actualmente, soy Frontend Lead en{' '}
+					<a href='https://shop.mango.com'>Mango.com</a> a la vez que gestiono
+					mi proyecto personal en{' '}
+					<a href='https://app.happergy.es'>Happergy.es</a>, ayudando a la gente
+					a ahorrar en su factura de la luz.
+				</p>
+				<br />
+				<p>
+					Apasionado por la <Link href='/accessibility'>Accesibilidad</Link>, me
+					gusta compartir mis conocimientos como{' '}
+					<Link href='/speaker'>Speaker</Link> y ayudar a la gente con mis
+					sesiones de <Link href='/mentoring'>Mentoring</Link>. Si tienes mas
+					dudas, no dudes en dejar tu pregunta en nuestra{' '}
+					<Link href='/comunidad'>Comunidad</Link>.
+				</p>
+			</main>
+		</>
+	)
 }
