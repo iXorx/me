@@ -1,4 +1,5 @@
 import styles from './page.module.css'
+import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Home() {
@@ -8,24 +9,35 @@ export default function Home() {
 				<h1 className={styles.name}>Jordi Turull</h1>
 			</header>
 			<main>
-				<nav>
-					<ul>
-						<li>
-							<Link href='/accessibility'>Accessibility</Link>
-						</li>
-						<li>
-							<Link href='/speaker'>Speaker</Link>
-						</li>
-						<li>
-							<Link href='/mentoring'>Mentoring</Link>
-						</li>
-						<li>
-							<Link href='/comunidad'>Comunidad</Link>
-						</li>
-					</ul>
-				</nav>
+				<section>
+					<div className={styles.presentation}>
+						<Image
+							src='/profile.jpeg'
+							alt='Hombre de piel blanca, mediana edad, pelo corto moreno y barba corta. Lleva una camisa azul abierta con camiseta negra debajo'
+							width='280'
+							height='280'
+							className={styles.avatar}
+							fetchPriority='high'
+						/>
+						<nav className={styles.text}>
+							<ul>
+								<li>
+									<Link href='/accessibility'>Accessibility</Link>
+								</li>
+								<li>
+									<Link href='/speaker'>Speaker</Link>
+								</li>
+								<li>
+									<Link href='/mentoring'>Mentoring</Link>
+								</li>
+								<li>
+									<Link href='/comunidad'>Comunidad</Link>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</section>
 
-				<h2>Sobre mí</h2>
 				<p>
 					Con 15 años de experiencia en el mundo del desarrollo web, he
 					trabajado en empresas y proyectos de diferentes tamaños y sectores.

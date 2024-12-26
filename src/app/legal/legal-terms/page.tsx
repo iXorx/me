@@ -1,6 +1,10 @@
 import { Header } from '@/components/header/Header'
+import type { Viewport } from 'next'
 import Head from 'next/head'
 
+export const viewport: Viewport = {
+	themeColor: '#fff',
+}
 export default function LegalTerms() {
 	return (
 		<>

@@ -2,7 +2,7 @@
 	--black: #000000;
 	--background: #242424;
 	--accessibility: #32586d;
-	--foreground: #f6f1d1;
+	--foreground: #fffce5;
 	--accent: #f6f1d1;
 	--comunidad: #f6f1d1;
 	--mentoring: #d04a03;
@@ -22,7 +22,6 @@ body {
 	background: var(--background);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-
 	font-size: 1rem;
 	line-height: 1.75rem;
 	display: grid;
@@ -57,33 +56,21 @@ main {
 }
 
 h1 {
-	font-family: Satoshi;
-	font-size: 3.5rem;
+	font-size: 2.5rem;
 	font-weight: 400;
-	line-height: 4.75rem;
-	text-align: left;
-	text-underline-position: from-font;
-	text-decoration-skip-ink: none;
+	line-height: 5rem;
 }
 
 h2 {
-	font-family: Satoshi;
 	font-size: 2rem;
 	font-weight: 400;
-	line-height: 2.75rem;
-	text-align: left;
-	text-underline-position: from-font;
-	text-decoration-skip-ink: none;
+	line-height: 4rem;
 	margin: 1rem 0;
 }
 
 h3 {
-	font-family: Satoshi;
 	font-size: 1.5rem;
 	font-weight: 400;
-	line-height: 2rem;
-	text-align: left;
-	text-underline-position: from-font;
-	text-decoration-skip-ink: none;
+	line-height: 3rem;
 	margin: 1rem 0 0.5rem;
 }

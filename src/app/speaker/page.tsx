@@ -1,5 +1,10 @@
 import { Header, Section } from '@/components/header/Header'
+import type { Viewport } from 'next'
 import Head from 'next/head'
+
+export const viewport: Viewport = {
+	themeColor: '#933f99',
+}
 
 export default function Speaker() {
 	return (

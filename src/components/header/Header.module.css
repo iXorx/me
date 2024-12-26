@@ -30,9 +30,16 @@
 
 .menu {
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 	padding: 0.5rem 1rem;
+}
+
+@media screen and (min-width: 500px) {
+	.menu {
+		flex-direction: row;
+	}
 }
 
 .menuList {

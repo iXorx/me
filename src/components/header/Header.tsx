@@ -17,7 +17,7 @@ export function Header({
 	return (
 		<header className={`${styles[section]} ${styles.header}`}>
 			<div className={styles.menu}>
-				<Link href='/'>Inicio</Link>
+				<Link href='/'>Jordi Turull</Link>
 				<nav aria-label='Menú de navegación'>
 					<ul className={styles.menuList}>
 						<li>
