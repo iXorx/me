@@ -1,7 +1,9 @@
+import styles from './page.module.css'
 import { Header, Section } from '@/components/header/Header'
 import { SpeakerLink } from '@/components/links/SpeakerLink'
 import type { Viewport } from 'next'
 import Head from 'next/head'
+import Image from 'next/image'
 import Link from 'next/link'
 
 export const viewport: Viewport = {
@@ -41,17 +43,11 @@ export default function SlashFridays() {
 					aplicación hecha en <i lang='en'>React</i> para ver también las
 					herramientas que nos ofrece el navegador para detectar estos fallos.
 				</p>
-				<iframe
-					width='560'
-					height='315'
-					src='https://www.youtube-nocookie.com/embed/hHtQxkmNtZw?si=4c5tm8-HA2IDu9o3'
-					title='YouTube video player'
-					allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-					referrerPolicy='strict-origin-when-cross-origin'
-					allowFullScreen
-				></iframe>
 				<p>
 					<a href='https://www.youtube.com/watch?v=hHtQxkmNtZw'>
+						<span className={styles.image}>
+							<Image src='/slash-speaker.png' alt='' fill />
+						</span>
 						Enlace al video de <i lang='en'>Youtube</i>
 					</a>
 				</p>

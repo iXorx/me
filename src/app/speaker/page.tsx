@@ -30,7 +30,7 @@ export default function Speaker() {
 					<div>
 						<Card
 							title='Mundo unicornio 🦄 testing + accesibilidad'
-							image='logo-slash.jpg'
+							image='slash-logo.jpg'
 							conf='SlahFridays'
 							date='2021-09-24'
 							summary='SlashFridays es un evento de la comunidad de Mango que se celebra el último viernes de cada mes. En esta edición, hablé sobre cómo mejorar la accesibilidad en nuestras aplicaciones web.'
