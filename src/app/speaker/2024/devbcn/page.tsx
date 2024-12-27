@@ -1,9 +1,7 @@
-import styles from './page.module.css'
 import { Header, Section } from '@/components/header/Header'
 import { SpeakerLink } from '@/components/links/SpeakerLink'
 import type { Viewport } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 import Link from 'next/link'
 
 export const viewport: Viewport = {
