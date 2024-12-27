@@ -1,0 +1,6 @@
+.main {
+	background: rgb(240, 235, 248);
+	color: var(--notes);
+	margin: 0;
+	padding: 0;
+}

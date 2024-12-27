@@ -1,3 +1,4 @@
+import { Card } from '@/components/card/Card'
 import { Header, Section } from '@/components/header/Header'
 import type { Viewport } from 'next'
 import Head from 'next/head'
@@ -10,34 +11,33 @@ export default function Speaker() {
 	return (
 		<>
 			<Head>
-				<title>Speaker</title>
-				<meta name='theme-color' content='var(--speaker)' />
+				<title lang='en'>Speaker</title>
 			</Head>
-			<Header section={Section.Speaker}>Speaker</Header>
+			<Header section={Section.Speaker}>
+				<i lang='en'>Speaker</i>
+			</Header>
 			<main>
 				<p>
-					Speaker is the practice of making your websites usable by as many
-					people as possible. We traditionally think of this as being about
-					people with disabilities, but the practice of making sites accessible
-					also benefits other groups such as those using mobile devices, or
-					those with slow network connections.
+					Me encanta compartir conocimientos y experiencias. Por eso, he
+					participado en varios eventos y conferencias como ponente.
 				</p>
 				<p>
-					There are many things you can do to make your site more accessible.
-					This includes:
+					¿Crees que mi perfil encaja en tu evento? ¡Pues{' '}
+					<a href='mailto:hi@jorditurull.me'>mándame un correo</a>!
 				</p>
-				<ul>
-					<li>Using semantic HTML</li>
-					<li>Providing good keyboard navigation</li>
-					<li>Providing good focus indicators</li>
-					<li>Using ARIA roles and properties</li>
-					<li>Ensuring your site works with screen readers</li>
-					<li>Testing with real users</li>
-				</ul>
-				<p>
-					This section includes some examples to demonstrate how you can make
-					your site more accessible.
-				</p>
+				<section>
+					<h2>Conferencias en las que he participado:</h2>
+					<div>
+						<Card
+							title='Mundo unicornio 🦄 testing + accesibilidad'
+							image='logo-slash.jpg'
+							conf='SlahFridays'
+							date='2021-09-24'
+							summary='SlashFridays es un evento de la comunidad de Mango que se celebra el último viernes de cada mes. En esta edición, hablé sobre cómo mejorar la accesibilidad en nuestras aplicaciones web.'
+							link='speaker/2024/slashfridays'
+						/>
+					</div>
+				</section>
 			</main>
 		</>
 	)

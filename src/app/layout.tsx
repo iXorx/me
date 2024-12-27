@@ -13,6 +13,8 @@ const satoshi = localFont({
 	],
 })
 
+// TODO: add analytics
+
 export default function Layout({
 	children,
 }: Readonly<{

@@ -1,0 +1,18 @@
+.feedback {
+	margin: auto;
+	color: var(--notes);
+	background: var(--accent);
+	width: 100%;
+	padding: 1.5rem 0;
+}
+
+.title {
+	margin: 0;
+}
+
+.wrapper {
+	margin: auto;
+	max-width: 25rem;
+	text-align: center;
+	line-height: 1.7rem;
+}

@@ -15,23 +15,54 @@ export function Header({
 	section = Section.Default,
 }: Readonly<{ children: React.ReactNode; section?: Section }>) {
 	return (
-		<header className={`${styles[section]} ${styles.header}`}>
+		<header className={styles[section]}>
 			<div className={styles.menu}>
-				<Link href='/'>Jordi Turull</Link>
+				<Link className={styles.link} href='/'>
+					Jordi Turull
+				</Link>
 				<nav aria-label='Menú de navegación'>
 					<ul className={styles.menuList}>
-						<li>
-							<Link href='/accessibility'>Accesibilidad</Link>
-						</li>
-						<li>
-							<Link href='/speaker'>Speaker</Link>
-						</li>
-						<li>
-							<Link href='/mentoring'>Mentor</Link>
-						</li>
-						<li>
-							<Link href='/comunidad'>Comunidad</Link>
-						</li>
+						{section === Section.Accessibility ? (
+							<li aria-current='page'>Accesibilidad</li>
+						) : (
+							<li>
+								<Link className={styles.link} href='/accessibility'>
+									Accesibilidad
+								</Link>
+							</li>
+						)}
+						{section === Section.Speaker || section === Section.Notes ? (
+							<li aria-current='page'>
+								{' '}
+								<i lang='en'>Speaker</i>
+							</li>
+						) : (
+							<li>
+								<Link className={styles.link} href='/speaker'>
+									<i lang='en'>Speaker</i>
+								</Link>
+							</li>
+						)}
+						{section === Section.Mentoring ? (
+							<li aria-current='page'>
+								<i lang='en'>Mentoring</i>
+							</li>
+						) : (
+							<li>
+								<Link className={styles.link} href='/mentoring'>
+									<i lang='en'>Mentoring</i>
+								</Link>
+							</li>
+						)}
+						{section === Section.Comunidad ? (
+							<li aria-current='page'>Comunidad</li>
+						) : (
+							<li>
+								<Link className={styles.link} href='/comunidad'>
+									Comunidad
+								</Link>
+							</li>
+						)}
 					</ul>
 				</nav>
 			</div>

@@ -10,10 +10,12 @@ export default function Mentoring() {
 	return (
 		<>
 			<Head>
-				<title>Mentor</title>
+				<title>Mentoring</title>
 				<meta name='theme-color' content='var(--mentoring)' />
 			</Head>
-			<Header section={Section.Mentoring}>Mentor</Header>
+			<Header section={Section.Mentoring}>
+				<i lang='en'>Mentoring</i>
+			</Header>
 			<main>
 				<p>
 					El mentoring es una relación de aprendizaje y crecimiento mutuo. Yo

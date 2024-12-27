@@ -12,7 +12,7 @@ export default function Home() {
 				<section>
 					<div className={styles.presentation}>
 						<Image
-							src='/profile.jpeg'
+							src='profile.jpeg'
 							alt='Hombre de piel blanca, mediana edad, pelo corto moreno y barba corta. Lleva una camisa azul abierta con camiseta negra debajo'
 							width='280'
 							height='280'
@@ -21,17 +21,25 @@ export default function Home() {
 						/>
 						<nav className={styles.text}>
 							<ul>
-								<li>
-									<Link href='/accessibility'>Accessibility</Link>
+								<li className={styles.item}>
+									<Link className={styles.link} href='accessibility'>
+										Accesibilidad
+									</Link>
 								</li>
-								<li>
-									<Link href='/speaker'>Speaker</Link>
+								<li className={styles.item} lang='en'>
+									<Link className={styles.link} href='speaker'>
+										Speaker
+									</Link>
 								</li>
-								<li>
-									<Link href='/mentoring'>Mentoring</Link>
+								<li className={styles.item} lang='en'>
+									<Link className={styles.link} href='mentoring'>
+										Mentoring
+									</Link>
 								</li>
-								<li>
-									<Link href='/comunidad'>Comunidad</Link>
+								<li className={styles.item}>
+									<Link className={styles.link} href='comunidad'>
+										Comunidad
+									</Link>
 								</li>
 							</ul>
 						</nav>

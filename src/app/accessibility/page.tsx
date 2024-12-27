@@ -16,12 +16,11 @@ export default function Accessibility() {
 			<main>
 				<p>
 					La accesibilidad (a11y) no es un privilegio, es un derecho. Por eso,
-					desde hace 4 años, soy un Accessibility Champion y me dedico a
+					desde hace 4 años, soy Accessibility Champion y me dedico a
 					concienciar y a formar equipos de desarrollo en accesibilidad.
 				</p>
-				<br />
-				<p>Te comparto el listado de recursos que más me sirven a mi:</p>
-				<section className='wrapper'>
+				<p>Te comparto el listado de recursos que más uso:</p>
+				<section>
 					<h2>Herramientas</h2>
 					<h3>Extensiones navegador</h3>
 					<p>
@@ -90,7 +89,7 @@ export default function Accessibility() {
 						</li>
 					</ul>
 				</section>
-				<section className='wrapper'>
+				<section>
 					<h2>Personas de referencia</h2>
 					<p>
 						Personas que hacen creación de contenido en redes sobre
@@ -138,13 +137,6 @@ export default function Accessibility() {
 							</a>
 						</li>
 					</ul>
-				</section>
-				<section className='wrapper'>
-					<h2>Mas sobre mi</h2>
-					<p>
-						Visita <a href='https://jorditurull.me'>mi perfil</a> para contactar
-						conmigo.
-					</p>
 				</section>
 			</main>
 		</>
