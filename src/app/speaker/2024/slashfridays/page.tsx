@@ -47,7 +47,7 @@ export default function SlashFridays() {
 					<a href='https://www.youtube.com/watch?v=hHtQxkmNtZw'>
 						<span className={styles.image}>
 							<Image
-								src='/slash-speaker.png'
+								src='slash-speaker.png'
 								alt='Captura de pantalla del video de la charla'
 								fill
 							/>

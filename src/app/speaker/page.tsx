@@ -33,7 +33,7 @@ export default function Speaker() {
 						<Card
 							heading={
 								<Image
-									src='/slash-logo.jpg'
+									src='slash-logo.jpg'
 									alt='Logo SlashMobility'
 									width={220}
 									height={45}
@@ -47,7 +47,7 @@ export default function Speaker() {
 						<Card
 							heading={
 								<Image
-									src='/devbcn-logo.png'
+									src='devbcn-logo.png'
 									alt='Logo DevBcn'
 									width={150}
 									height={80}
@@ -61,7 +61,7 @@ export default function Speaker() {
 						<Card
 							heading={
 								<Image
-									src='/vlc-logo.png'
+									src='vlc-logo.png'
 									alt='Logo VLC Tech Fest 2024'
 									width={180}
 									height={60}
@@ -82,7 +82,7 @@ export default function Speaker() {
 						<Card
 							heading={
 								<Image
-									src='/garaje-logo.png'
+									src='garaje-logo.png'
 									alt='Logo Garaje de Ideas'
 									width={60}
 									height={60}
@@ -96,7 +96,7 @@ export default function Speaker() {
 						<Card
 							heading={
 								<Image
-									src='/devbcn-logo.png'
+									src='devbcn-logo.png'
 									alt='Logo DevBcn'
 									width={150}
 									height={80}
@@ -110,7 +110,7 @@ export default function Speaker() {
 						<Card
 							heading={
 								<Image
-									src='/activismo-logo.jpg'
+									src='activismo-logo.jpg'
 									alt='Logo Activismo Positivo'
 									width={180}
 									height={78}
