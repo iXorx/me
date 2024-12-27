@@ -3,4 +3,14 @@
 	color: var(--notes);
 	margin: 0;
 	padding: 0;
+	max-width: unset;
+}
+
+.intro {
+	margin: 0 auto;
+	padding: 2rem 1rem 0;
+	width: 100%;
+	max-width: 50rem;
+	font-size: 1.1rem;
+	line-height: 2.2rem;
 }

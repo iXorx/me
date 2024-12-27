@@ -19,12 +19,12 @@ export default function MundoUnicornio() {
 				Feedback: Mundo unicornio 🦄 testing + accesibilidad
 			</Header>
 			<main className={styles.main}>
-				<SpeakerLink />
-				<p>
-					<Link className={styles.link} href='/notes/mundo-unicornio'>
-						Ver notas de la charla
-					</Link>
-				</p>
+				<div className={styles.intro}>
+					<SpeakerLink />
+					<p>
+						<Link href='/notes/mundo-unicornio'>Ver notas de la charla</Link>
+					</p>
+				</div>
 				<iframe
 					title='Formulario de feedback de la charla de Mundo unicornio: testing + accesibilidad'
 					style={{ width: '100vw', border: 'none', height: 1200 }}

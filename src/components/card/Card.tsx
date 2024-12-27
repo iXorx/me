@@ -1,32 +1,34 @@
 import styles from './Card.module.css'
-import Image from 'next/image'
 import Link from 'next/link'
+import React from 'react'
 
 export function Card({
 	conf,
 	title,
 	date,
-	image,
-	summary,
 	link,
+	heading,
 }: Readonly<{
 	conf: string
 	title: string
 	date: string
-	image: string
-	summary: string
 	link: string
+	heading: React.ReactNode
 }>) {
 	return (
-		<article className={styles.card}>
-			<Image src={image} alt={`Logo ${title}`} width={200} height={50} />
-			<h3 id={`${title}-${date}`}>{title}</h3>
-			<p className={styles.conf}>{conf}</p>
-			<time dateTime={date}>{date}</time>
-			<p>{summary}</p>
-			<Link href={link} aria-describedby={`${title}-${date}`}>
-				Ver detalle
-			</Link>
-		</article>
+		<li>
+			<article className={styles.card}>
+				<div className={styles.heading}>{heading}</div>
+				<div className={styles.content}>
+					<h3 className={styles.conf} id={`${conf}-${date}`}>
+						{conf} (<time dateTime={date}>{date})</time>
+					</h3>
+					<div>{title}</div>
+					<Link href={link} aria-describedby={`${conf}-${date}`}>
+						Ver detalle
+					</Link>
+				</div>
+			</article>
+		</li>
 	)
 }

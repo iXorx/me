@@ -10,14 +10,14 @@ export const viewport: Viewport = {
 	themeColor: '#933f99',
 }
 
-export default function SlashFridays() {
+export default function DevBcn() {
 	return (
 		<>
 			<Head>
-				<title lang='en'>SlashFridays</title>
+				<title lang='en'>DevBcn</title>
 			</Head>
 			<Header section={Section.Speaker}>
-				<i lang='en'>SlashFridays</i>
+				<i lang='en'>DevBcn</i>
 			</Header>
 			<main>
 				<SpeakerLink />
@@ -44,16 +44,9 @@ export default function SlashFridays() {
 					herramientas que nos ofrece el navegador para detectar estos fallos.
 				</p>
 				<p>
-					<a href='https://www.youtube.com/watch?v=hHtQxkmNtZw'>
-						<span className={styles.image}>
-							<Image
-								src='/slash-speaker.png'
-								alt='Captura de pantalla del video de la charla'
-								fill
-							/>
-						</span>
-						Enlace al video de <i lang='en'>Youtube</i>
-					</a>
+					Esta charla no fue registrada en vídeo, pero puedes ver la misma
+					versión de <Link href='/speaker/2024/slashfridays'>la charla</Link>{' '}
+					grabada en otro evento.
 				</p>
 				<p>
 					Ver las <Link href='/notes/mundo-unicornio'>notas de la charla</Link>{' '}
@@ -61,26 +54,20 @@ export default function SlashFridays() {
 				</p>
 
 				<h2>
-					Más sobre <i lang='en'>SlashFridays</i>
+					Más sobre <i lang='en'>DevBcn</i>
 				</h2>
-				<a href='https://slashmobility.com/blog/2024/11/accesibilidad-digital-como-construir-un-mundo-mas-inclusivo/'>
-					Post del blog mencionado la charla.
-				</a>
 				<p>
-					En el ADN Slash están inscritas las ganas de aprender y compartir
-					conocimiento. Por ello, los viernes alternos{' '}
-					<i lang='en'>Slashmobility</i> organiza las famosas SlashFridays, una
-					iniciativa para estar al día de las novedades del sector, para
-					aprender de los demás, generar conocimiento y motivar a su equipo. La
-					temática que tratan es amplia: innovación, tendencias del mercado,
-					tecnologías disruptivas, aprendemos de expertos colaboradores externos
-					que nos hablan de su modelo de negocio, también hablan sobre diseño o
-					desarrollo, entre otros. Al fin y al cabo, un espacio donde compartir
-					conocimiento y generar networking.
+					Conferencia multidisciplinar (antigua JBCNConf) creada para
+					desarrolladores y por desarrolladores, para aprender y compartir sobre
+					las diferentes tecnologías de software modernas que se utilizan en las
+					empresas.
 				</p>
-				<a href='https://slashmobility.com/blog/2019/01/slashfriday-tu-espacio-de-conocimiento-y-networking/'>
-					Más información de <i lang='en'>SlashFridays</i>
-				</a>
+				<p>
+					Antigua JBCNConf, ahora con 7 temas sobre Java, JVM, lenguajes
+					nativos, nube, DevOps, Kubernetes, frontend, Agile, Big Data, Machine
+					Learning e IA
+				</p>
+				<p>Hospitalet de llobregat, Barcelona, España</p>
 				<p>¡Gracias por la oportunidad!</p>
 			</main>
 		</>

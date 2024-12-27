@@ -26,14 +26,14 @@ export default function Home() {
 										Accesibilidad
 									</Link>
 								</li>
-								<li className={styles.item} lang='en'>
+								<li className={styles.item}>
 									<Link className={styles.link} href='speaker'>
-										Speaker
+										<i lang='en'>Speaker</i>
 									</Link>
 								</li>
-								<li className={styles.item} lang='en'>
+								<li className={styles.item}>
 									<Link className={styles.link} href='mentoring'>
-										Mentoring
+										<i lang='en'>Mentoring</i>
 									</Link>
 								</li>
 								<li className={styles.item}>

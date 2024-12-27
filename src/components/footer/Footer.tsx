@@ -43,6 +43,9 @@ export function Footer() {
 				<li>
 					<Link href='/legal/legal-terms'>Aviso legal</Link>
 				</li>
+				<li>
+					<Link href='/site-map'>Mapa web</Link>
+				</li>
 			</ul>
 		</footer>
 	)

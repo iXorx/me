@@ -31,7 +31,7 @@ export function Header({
 								</Link>
 							</li>
 						)}
-						{section === Section.Speaker || section === Section.Notes ? (
+						{section === Section.Speaker ? (
 							<li aria-current='page'>
 								{' '}
 								<i lang='en'>Speaker</i>
