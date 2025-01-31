@@ -32,25 +32,24 @@ export function Header({
 							</li>
 						)}
 						{section === Section.Speaker ? (
-							<li aria-current='page'>
-								{' '}
-								<i lang='en'>Speaker</i>
+							<li aria-current='page' lang='en'>
+								Speaker
 							</li>
 						) : (
-							<li>
+							<li lang='en'>
 								<Link className={styles.link} href='/speaker'>
-									<i lang='en'>Speaker</i>
+									Speaker
 								</Link>
 							</li>
 						)}
 						{section === Section.Mentoring ? (
-							<li aria-current='page'>
-								<i lang='en'>Mentoring</i>
+							<li aria-current='page' lang='en'>
+								Mentoring
 							</li>
 						) : (
-							<li>
+							<li lang='en'>
 								<Link className={styles.link} href='/mentoring'>
-									<i lang='en'>Mentoring</i>
+									Mentoring
 								</Link>
 							</li>
 						)}
