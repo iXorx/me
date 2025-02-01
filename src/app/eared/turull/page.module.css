@@ -5,9 +5,7 @@
 }
 
 .player {
-	content-align: center;
 	margin: auto;
-	min-width: 500px;
 	max-width: 1000px;
-	width: 80%;
+	width: 90%;
 }
