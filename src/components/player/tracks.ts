@@ -1,7 +1,7 @@
 export const textTracks = [
 	// Subtitles
 	{
-		src: '/video/cv.vtt',
+		src: '/me/video/cv.vtt',
 		label: 'Español (ES)',
 		language: 'es-ES',
 		kind: 'subtitles',
