@@ -53,17 +53,17 @@ export function Player() {
 			<p>Presentación de Jordi Turull para la asignatura del master.</p>
 			<ul aria-label='Entrega de la asignatura'>
 				<li>
-					<a href="/video/cv.mp4">
+					<a href="video/cv.mp4">
 						Video sin audiodescripción
 					</a>
 				</li>
 				<li>
-					<a href="/video/audiodesc.mp4">
+					<a href="video/audiodesc.mp4">
 						Video con audiodescripción
 					</a>
 				</li>
 				<li>
-					<a href="/video/cv.vtt">
+					<a href="video/cv.vtt">
 						Subtítulos en español
 					</a>
 				</li>
