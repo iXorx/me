@@ -27,14 +27,14 @@ export function Player() {
 			<MediaPlayer
 				className={styles.player}
 				title='Presentación Jordi Turull'
-				src={isAudioDescription ? '/video/audiodesc.mp4' : '/video/cv.mp4'}
+				src={isAudioDescription ? 'video/audiodesc.mp4' : 'video/cv.mp4'}
 				crossOrigin
 				ref={player}
 			>
 				<MediaProvider>
 					<Poster
 						className='vds-poster'
-						src='/video/caratula.png'
+						src='video/caratula.png'
 						alt='Curriculum Vitae Jordi Turull'
 					/>
 					{textTracks.map((track) => (
