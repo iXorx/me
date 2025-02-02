@@ -51,18 +51,6 @@ export function Player() {
 			>
 				Ver video {isAudioDescription ? 'sin' : 'con'} audiodescripción
 			</button>
-			<p>Presentación de Jordi Turull para la asignatura del master.</p>
-			<ul aria-label='Entrega de la asignatura'>
-				<li>
-					<a href='/me/video/cv.mp4'>Video sin audiodescripción</a>
-				</li>
-				<li>
-					<a href='/me/video/audiodesc.mp4'>Video con audiodescripción</a>
-				</li>
-				<li>
-					<a href='/me/video/cv.vtt'>Subtítulos en español</a>
-				</li>
-			</ul>
 		</>
 	)
 }
