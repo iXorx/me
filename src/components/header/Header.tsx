@@ -6,7 +6,6 @@ export enum Section {
 	Accessibility = 'accessibility',
 	Speaker = 'speaker',
 	Mentoring = 'mentoring',
-	Comunidad = 'comunidad',
 	Notes = 'notes',
 }
 
@@ -50,15 +49,6 @@ export function Header({
 							<li lang='en'>
 								<Link className={styles.link} href='/mentoring'>
 									Mentoring
-								</Link>
-							</li>
-						)}
-						{section === Section.Comunidad ? (
-							<li aria-current='page'>Comunidad</li>
-						) : (
-							<li>
-								<Link className={styles.link} href='/comunidad'>
-									Comunidad
 								</Link>
 							</li>
 						)}

@@ -36,11 +36,6 @@ export default function Home() {
 										<i lang='en'>Mentoring</i>
 									</Link>
 								</li>
-								<li className={styles.item}>
-									<Link className={styles.link} href='comunidad'>
-										Comunidad
-									</Link>
-								</li>
 							</ul>
 						</nav>
 					</div>
@@ -62,9 +57,7 @@ export default function Home() {
 					Apasionado por la <Link href='/accessibility'>Accesibilidad</Link>, me
 					gusta compartir mis conocimientos como{' '}
 					<Link href='/speaker'>Speaker</Link> y ayudar a la gente con mis
-					sesiones de <Link href='/mentoring'>Mentoring</Link>. Si tienes mas
-					dudas, no dudes en dejar tu pregunta en nuestra{' '}
-					<Link href='/comunidad'>Comunidad</Link>.
+					sesiones de <Link href='/mentoring'>Mentoring</Link>.
 				</p>
 			</main>
 		</>

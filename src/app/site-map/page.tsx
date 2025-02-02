@@ -46,9 +46,6 @@ export default function SiteMap() {
 						<Link href='/mentoring'>Mentoring</Link>
 					</li>
 					<li>
-						<Link href='/comunidad'>Comunidad</Link>
-					</li>
-					<li>
 						<Link href='/legal/privacy-policy'>Política de privacidad</Link>
 					</li>
 					<li>
