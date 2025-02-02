@@ -10,7 +10,6 @@ import {
 	type MediaPlayerInstance,
 } from '@vidstack/react'
 import {
-	DefaultAudioLayout,
 	defaultLayoutIcons,
 	DefaultVideoLayout,
 } from '@vidstack/react/player/layouts/default'
