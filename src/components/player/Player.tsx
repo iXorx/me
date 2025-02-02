@@ -27,14 +27,15 @@ export function Player() {
 			<MediaPlayer
 				className={styles.player}
 				title='Presentación Jordi Turull'
-				src={isAudioDescription ? 'video/audiodesc.mp4' : 'video/cv.mp4'}
-				crossOrigin
+				src={
+					isAudioDescription ? '/me/video/audiodesc.mp4' : '/me/video/cv.mp4'
+				}
 				ref={player}
 			>
 				<MediaProvider>
 					<Poster
 						className='vds-poster'
-						src='video/caratula.png'
+						src='/me/video/caratula.png'
 						alt='Curriculum Vitae Jordi Turull'
 					/>
 					{textTracks.map((track) => (
@@ -42,30 +43,25 @@ export function Player() {
 					))}
 				</MediaProvider>
 
-				<DefaultAudioLayout icons={defaultLayoutIcons} />
-				<DefaultVideoLayout
-					icons={defaultLayoutIcons}
-				/>
+				<DefaultVideoLayout icons={defaultLayoutIcons} />
 			</MediaPlayer>
-			<button onClick={() => setIsAudioDescription(!isAudioDescription)} aria-pressed={isAudioDescription} className={styles.button}>
+			<button
+				onClick={() => setIsAudioDescription(!isAudioDescription)}
+				aria-pressed={isAudioDescription}
+				className={styles.button}
+			>
 				Ver video {isAudioDescription ? 'sin' : 'con'} audiodescripción
 			</button>
 			<p>Presentación de Jordi Turull para la asignatura del master.</p>
 			<ul aria-label='Entrega de la asignatura'>
 				<li>
-					<a href="video/cv.mp4">
-						Video sin audiodescripción
-					</a>
+					<a href='/me/video/cv.mp4'>Video sin audiodescripción</a>
 				</li>
 				<li>
-					<a href="video/audiodesc.mp4">
-						Video con audiodescripción
-					</a>
+					<a href='/me/video/audiodesc.mp4'>Video con audiodescripción</a>
 				</li>
 				<li>
-					<a href="video/cv.vtt">
-						Subtítulos en español
-					</a>
+					<a href='/me/video/cv.vtt'>Subtítulos en español</a>
 				</li>
 			</ul>
 		</>
