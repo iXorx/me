@@ -20,19 +20,19 @@ export default function Turull() {
 			<main className={styles.main}>
 				<div className={styles.player}>
 					<Player />
+					<p id='downloads'>Ficheros para su descarga directa:</p>
+					<ul aria-describedby='downloads'>
+						<li>
+							<a href='/me/video/cv.mp4'>Video sin audiodescripción</a>
+						</li>
+						<li>
+							<a href='/me/video/audiodesc.mp4'>Video con audiodescripción</a>
+						</li>
+						<li>
+							<a href='/me/video/cv.vtt'>Subtítulos en español</a>
+						</li>
+					</ul>
 				</div>
-				<p id='downloads'>Ficheros para su descarga directa:</p>
-				<ul aria-describedby='downloads'>
-					<li>
-						<a href='/me/video/cv.mp4'>Video sin audiodescripción</a>
-					</li>
-					<li>
-						<a href='/me/video/audiodesc.mp4'>Video con audiodescripción</a>
-					</li>
-					<li>
-						<a href='/me/video/cv.vtt'>Subtítulos en español</a>
-					</li>
-				</ul>
 			</main>
 		</>
 	)
