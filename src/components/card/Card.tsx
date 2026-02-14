@@ -1,6 +1,6 @@
-import styles from './Card.module.css'
-import Link from 'next/link'
-import React from 'react'
+import Link from "next/link";
+import type React from "react";
+import styles from "./Card.module.css";
 
 export function Card({
 	conf,
@@ -9,11 +9,11 @@ export function Card({
 	link,
 	heading,
 }: Readonly<{
-	conf: string
-	title: string
-	date: string
-	link: string
-	heading: React.ReactNode
+	conf: string;
+	title: string;
+	date: string;
+	link: string;
+	heading: React.ReactNode;
 }>) {
 	return (
 		<li>
@@ -30,5 +30,5 @@ export function Card({
 				</div>
 			</article>
 		</li>
-	)
+	);
 }

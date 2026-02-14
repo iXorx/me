@@ -45,11 +45,11 @@
 .menuList {
 	margin: 0;
 	padding: 0;
-	list-style-type: '';
+	list-style-type: "";
 	display: flex;
 	gap: 1rem;
 
-	& > [aria-current='page'] {
+	& > [aria-current="page"] {
 		font-weight: bold;
 	}
 }

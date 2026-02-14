@@ -1,20 +1,20 @@
-import { Header, Section } from '@/components/header/Header'
-import type { Viewport } from 'next'
-import Head from 'next/head'
+import type { Viewport } from "next";
+import Head from "next/head";
+import { Header, Section } from "@/components/header/Header";
 
 export const viewport: Viewport = {
-	themeColor: '#d04a03',
-}
+	themeColor: "#d04a03",
+};
 
 export default function Mentoring() {
 	return (
 		<>
 			<Head>
 				<title>Mentoring</title>
-				<meta name='theme-color' content='var(--mentoring)' />
+				<meta name="theme-color" content="var(--mentoring)" />
 			</Head>
 			<Header section={Section.Mentoring}>
-				<i lang='en'>Mentoring</i>
+				<i lang="en">Mentoring</i>
 			</Header>
 			<main>
 				<p>
@@ -29,5 +29,5 @@ export default function Mentoring() {
 				</p>
 			</main>
 		</>
-	)
+	);
 }

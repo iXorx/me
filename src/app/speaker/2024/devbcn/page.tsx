@@ -1,21 +1,21 @@
-import { Header, Section } from '@/components/header/Header'
-import { SpeakerLink } from '@/components/links/SpeakerLink'
-import type { Viewport } from 'next'
-import Head from 'next/head'
-import Link from 'next/link'
+import type { Viewport } from "next";
+import Head from "next/head";
+import Link from "next/link";
+import { Header, Section } from "@/components/header/Header";
+import { SpeakerLink } from "@/components/links/SpeakerLink";
 
 export const viewport: Viewport = {
-	themeColor: '#933f99',
-}
+	themeColor: "#933f99",
+};
 
 export default function DevBcn() {
 	return (
 		<>
 			<Head>
-				<title lang='en'>DevBcn</title>
+				<title lang="en">DevBcn</title>
 			</Head>
 			<Header section={Section.Speaker}>
-				<i lang='en'>DevBcn</i>
+				<i lang="en">DevBcn</i>
 			</Header>
 			<main>
 				<SpeakerLink />
@@ -23,7 +23,7 @@ export default function DevBcn() {
 				<p>
 					Cada año WebAim estudia el estado global de la accesibilidad
 					analizando el top 1 millón de homepages (
-					<a href='https://webaim.org/projects/million/' lang='en'>
+					<a href="https://webaim.org/projects/million/" lang="en">
 						1 Milion Project
 					</a>
 					). En el análisis de febrero de 2024 se detectaron cerca de 50
@@ -36,23 +36,23 @@ export default function DevBcn() {
 					En este charla vamos a unir dos grandes unicornios de nuestra
 					industria: los tests y la accesibilidad y veremos cuáles son y que
 					podemos hacer para evitar repetir siempre los mismos errores en
-					nuestras aplicaciones, protegiéndonos con el uso de unit test con{' '}
-					<i lang='en'>react-testing-library</i>. Como base, usaremos una
-					aplicación hecha en <i lang='en'>React</i> para ver también las
+					nuestras aplicaciones, protegiéndonos con el uso de unit test con{" "}
+					<i lang="en">react-testing-library</i>. Como base, usaremos una
+					aplicación hecha en <i lang="en">React</i> para ver también las
 					herramientas que nos ofrece el navegador para detectar estos fallos.
 				</p>
 				<p>
 					Esta charla no fue registrada en vídeo, pero puedes ver la misma
-					versión de <Link href='/speaker/2024/slashfridays'>la charla</Link>{' '}
+					versión de <Link href="/speaker/2024/slashfridays">la charla</Link>{" "}
 					grabada en otro evento.
 				</p>
 				<p>
-					Ver las <Link href='/notes/mundo-unicornio'>notas de la charla</Link>{' '}
-					y <Link href='/feedback/mundo-unicornio'>dar feedback</Link>
+					Ver las <Link href="/notes/mundo-unicornio">notas de la charla</Link>{" "}
+					y <Link href="/feedback/mundo-unicornio">dar feedback</Link>
 				</p>
 
 				<h2>
-					Más sobre <i lang='en'>DevBcn</i>
+					Más sobre <i lang="en">DevBcn</i>
 				</h2>
 				<p>
 					Conferencia multidisciplinar (antigua JBCNConf) creada para
@@ -69,5 +69,5 @@ export default function DevBcn() {
 				<p>¡Gracias por la oportunidad!</p>
 			</main>
 		</>
-	)
+	);
 }

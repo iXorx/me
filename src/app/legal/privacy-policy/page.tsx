@@ -1,17 +1,17 @@
-import { Header } from '@/components/header/Header'
-import type { Viewport } from 'next'
-import Head from 'next/head'
+import type { Viewport } from "next";
+import Head from "next/head";
+import { Header } from "@/components/header/Header";
 
 export const viewport: Viewport = {
-	themeColor: '#fff',
-}
+	themeColor: "#fff",
+};
 
 export default function PrivacyPolicy() {
 	return (
 		<>
 			<Head>
 				<title>Política de privacidad</title>
-				<meta name='theme-color' content='var(--accent)' />
+				<meta name="theme-color" content="var(--accent)" />
 			</Head>
 			<Header>Política de privacidad</Header>
 			<main>
@@ -66,5 +66,5 @@ export default function PrivacyPolicy() {
 				</p>
 			</main>
 		</>
-	)
+	);
 }

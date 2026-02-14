@@ -1,13 +1,13 @@
-import styles from './page.module.css'
-import { Header, Section } from '@/components/header/Header'
-import { SpeakerLink } from '@/components/links/SpeakerLink'
-import type { Viewport } from 'next'
-import Head from 'next/head'
-import Link from 'next/link'
+import type { Viewport } from "next";
+import Head from "next/head";
+import Link from "next/link";
+import { Header, Section } from "@/components/header/Header";
+import { SpeakerLink } from "@/components/links/SpeakerLink";
+import styles from "./page.module.css";
 
 export const viewport: Viewport = {
-	themeColor: '#573697',
-}
+	themeColor: "#573697",
+};
 
 export default function MundoUnicornio() {
 	return (
@@ -22,17 +22,17 @@ export default function MundoUnicornio() {
 				<div className={styles.intro}>
 					<SpeakerLink />
 					<p>
-						<Link href='/notes/mundo-unicornio'>Ver notas de la charla</Link>
+						<Link href="/notes/mundo-unicornio">Ver notas de la charla</Link>
 					</p>
 				</div>
 				<iframe
-					title='Formulario de feedback de la charla de Mundo unicornio: testing + accesibilidad'
-					style={{ width: '100vw', border: 'none', height: 1200 }}
-					src='https://docs.google.com/forms/d/e/1FAIpQLScGLdqc4powITCRznrnB-FtJeezlhVyY1Ys8bUJLl--ZV4D2A/viewform?embedded=true'
+					title="Formulario de feedback de la charla de Mundo unicornio: testing + accesibilidad"
+					style={{ width: "100vw", border: "none", height: 1200 }}
+					src="https://docs.google.com/forms/d/e/1FAIpQLScGLdqc4powITCRznrnB-FtJeezlhVyY1Ys8bUJLl--ZV4D2A/viewform?embedded=true"
 				>
 					Cargando…
 				</iframe>
 			</main>
 		</>
-	)
+	);
 }

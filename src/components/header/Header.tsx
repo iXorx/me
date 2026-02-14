@@ -1,12 +1,12 @@
-import styles from './Header.module.css'
-import Link from 'next/link'
+import Link from "next/link";
+import styles from "./Header.module.css";
 
 export enum Section {
-	Default = 'default',
-	Accessibility = 'accessibility',
-	Speaker = 'speaker',
-	Mentoring = 'mentoring',
-	Notes = 'notes',
+	Default = "default",
+	Accessibility = "accessibility",
+	Speaker = "speaker",
+	Mentoring = "mentoring",
+	Notes = "notes",
 }
 
 export function Header({
@@ -16,38 +16,38 @@ export function Header({
 	return (
 		<header className={styles[section]}>
 			<div className={styles.menu}>
-				<Link className={styles.link} href='/'>
+				<Link className={styles.link} href="/">
 					Jordi Turull
 				</Link>
-				<nav aria-label='Menú de navegación'>
+				<nav aria-label="Menú de navegación">
 					<ul className={styles.menuList}>
 						{section === Section.Accessibility ? (
-							<li aria-current='page'>Accesibilidad</li>
+							<li aria-current="page">Accesibilidad</li>
 						) : (
 							<li>
-								<Link className={styles.link} href='/accessibility'>
+								<Link className={styles.link} href="/accessibility">
 									Accesibilidad
 								</Link>
 							</li>
 						)}
 						{section === Section.Speaker ? (
-							<li aria-current='page' lang='en'>
+							<li aria-current="page" lang="en">
 								Speaker
 							</li>
 						) : (
-							<li lang='en'>
-								<Link className={styles.link} href='/speaker'>
+							<li lang="en">
+								<Link className={styles.link} href="/speaker">
 									Speaker
 								</Link>
 							</li>
 						)}
 						{section === Section.Mentoring ? (
-							<li aria-current='page' lang='en'>
+							<li aria-current="page" lang="en">
 								Mentoring
 							</li>
 						) : (
-							<li lang='en'>
-								<Link className={styles.link} href='/mentoring'>
+							<li lang="en">
+								<Link className={styles.link} href="/mentoring">
 									Mentoring
 								</Link>
 							</li>
@@ -57,5 +57,5 @@ export function Header({
 			</div>
 			<h1 className={styles.heading}>{children}</h1>
 		</header>
-	)
+	);
 }
