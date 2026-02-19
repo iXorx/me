@@ -31,6 +31,13 @@ export default function Speaker() {
 					<h2>¿Dónde he hablado?</h2>
 					<ul className={styles.list}>
 						<Card
+							heading={<>DesignOpsTalx</>}
+							title="Sesión práctica de accesibilidad Web para Devs"
+							conf="DesignOpsTalx"
+							date="28/02/2025"
+							link="speaker/2025/designopstalx"
+						/>
+						<Card
 							heading={<>Figma.camp</>}
 							title="¿La hora de rendir cuentas? - Una conversación sin filtros sobre accesibilidad digital."
 							conf="Figma.camp"

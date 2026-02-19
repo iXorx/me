@@ -10,14 +10,14 @@ export const viewport: Viewport = {
 	themeColor: "#933f99",
 };
 
-export default function SlashFridays() {
+export default function FigmaCamp() {
 	return (
 		<>
 			<Head>
-				<title lang="en">SlashFridays</title>
+				<title lang="en">Figma Camp</title>
 			</Head>
 			<Header section={Section.Speaker}>
-				<i lang="en">SlashFridays</i>
+				<i lang="en">Figma Camp</i>
 			</Header>
 			<main>
 				<SpeakerLink />
