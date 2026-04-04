@@ -22,7 +22,9 @@ export function Header({
 				<nav aria-label="Menú de navegación">
 					<ul className={styles.menuList}>
 						{section === Section.Accessibility ? (
-							<li aria-current="page">Accesibilidad</li>
+							<li aria-current="page">
+								<span className={styles.current}>Accesibilidad</span>
+							</li>
 						) : (
 							<li>
 								<Link className={styles.link} href="/accessibility">
@@ -32,7 +34,7 @@ export function Header({
 						)}
 						{section === Section.Speaker ? (
 							<li aria-current="page" lang="en">
-								Speaker
+								<span className={styles.current}>Speaker</span>
 							</li>
 						) : (
 							<li lang="en">
@@ -43,7 +45,7 @@ export function Header({
 						)}
 						{section === Section.Mentoring ? (
 							<li aria-current="page" lang="en">
-								Mentoring
+								<span className={styles.current}>Mentoring</span>
 							</li>
 						) : (
 							<li lang="en">

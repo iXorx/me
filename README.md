@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+First, run the development server with Turbopack:
 
 ```bash
 npm run dev
@@ -12,6 +12,20 @@ yarn dev
 pnpm dev
 # or
 bun dev
+```
+
+If you want to run the explicit Turbopack alias:
+
+```bash
+pnpm run dev:turbopack
+```
+
+For production builds, Turbopack is also enabled:
+
+```bash
+pnpm run build
+# or
+pnpm run build:turbopack
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

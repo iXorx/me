@@ -7,7 +7,8 @@ export default function Home() {
 		<>
 			<header>
 				<h1 className={styles.name}>
-					Jordi Turull — Frontend Lead en Mango | Accesibilidad y Speaker
+					Jordi Turull — Frontend Lead
+					<div>Accesibilidad y Speaker</div>
 				</h1>
 			</header>
 			<main>
@@ -44,24 +45,16 @@ export default function Home() {
 				</section>
 
 				<p>
-					Soy Jordi Turull, Frontend Lead con más de 15 años diseñando y
-					construyendo experiencias digitales accesibles y rápidas. Me
-					especializo en accesibilidad web (WCAG, a11y), rendimiento
-					frontend, arquitectura en React y Next.js, y en la mejora de
-					conversiones mediante optimización técnica.
+					Jordi Turull es ingeniero informático y técnico en realización de audiovisuales, con más de 15 años de experiencia en el sector tecnológico.
 				</p>
 				<p>
-					Actualmente lidero el equipo frontend en <a href="https://shop.mango.com">Mango.com</a>,
-					donde trabajo en arquitectura, rendimiento y accesibilidad. Además,
-					dirijo <a href="https://app.happergy.es">Happergy.es</a>, una plataforma
-					orientada a la eficiencia energética que ayuda a reducir la factura
-					eléctrica de los usuarios.
+					Le apasionan el diseño, la fotografía y el deporte. Desde 2020, ha incorporado la accesibilidad web a sus intereses, dedicando tiempo a difundir y sensibilizar sobre este tema crucial tanto dentro como fuera de la empresa. Especializado en frontend, se enfoca en accesibilidad web (WCAG, a11y), rendimiento frontend, arquitectura en React y Next.js, y en la mejora de conversiones mediante optimización técnica.
 				</p>
 				<p>
-					Comparto conocimientos como <Link href="/speaker">conferenciante</Link>,
-					ofrezco <Link href="/mentoring">mentoring</Link> en accesibilidad,
-					performance y buenas prácticas frontend, y colaboro con equipos para
-					mejorar la calidad y usabilidad de productos digitales.
+					Actualmente desempeña el rol de Tech Lead y Design System Engineeren <a href="https://shop.mango.com">Mango.com</a>, trabajando en arquitectura, rendimiento y accesibilidad. Además, dirige <a href="https://app.happergy.es">Happergy.es</a>, una plataforma orientada a la eficiencia energética que ayuda a reducir la factura eléctrica de los usuarios.
+				</p>
+				<p>
+					Comparte conocimientos como <Link href="/speaker">conferenciante</Link>, ofrece <Link href="/mentoring">mentoring</Link> en accesibilidad, performance y buenas prácticas frontend, y colabora con equipos para mejorar la calidad y usabilidad de productos digitales.
 				</p>
 			</main>
 		</>
