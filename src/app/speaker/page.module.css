@@ -1,8 +1,15 @@
+.timeline {
+	position: relative;
+}
+
 .list {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-	gap: 1rem;
+	display: flex;
+	flex-direction: column;
 	padding: 0;
 	margin: 0;
-	list-style-type: "";
 }
+
+.list li {
+	position: relative;
+}
+

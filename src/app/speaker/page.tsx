@@ -1,11 +1,10 @@
-import type { Viewport } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import { Card } from "@/components/card/Card";
 import { Header, Section } from "@/components/header/Header";
 import styles from "./page.module.css";
 
-export const viewport: Viewport = {
+export const viewport = {
 	themeColor: "#933f99",
 };
 
@@ -20,122 +19,93 @@ export default function Speaker() {
 			</Header>
 			<main>
 				<p>
-					Me encanta compartir conocimientos y experiencias. Por eso, he
-					participado en varios eventos y conferencias como ponente.
+					Tengo una pasión por compartir conocimientos y experiencias profesionales.
+					He participado como ponente en múltiples conferencias y eventos
+					de tecnología, accesibilidad digital y metodologías de desarrollo.
 				</p>
 				<p>
-					¿Crees que mi perfil encaja en tu evento? ¡Pues{" "}
-					<a href="mailto:hi@jorditurull.me">mándame un correo</a>!
+					Si consideras que mi perfil se alinea con los objetivos de tu evento o conferencia,
+					te invito a{" "}
+					<a href="mailto:hi@jorditurull.me">contactarme directamente</a> para explorar
+					posibles colaboraciones.
 				</p>
 				<section>
 					<h2>¿Dónde he hablado?</h2>
-					<ul className={styles.list}>
-						<Card
-							heading={<>DesignOpsTalx</>}
-							title="Sesión práctica de accesibilidad Web para Devs"
-							conf="DesignOpsTalx"
-							date="28/02/2025"
-							link="speaker/2025/designopstalx"
-						/>
-						<Card
-							heading={<>Figma.camp</>}
-							title="¿La hora de rendir cuentas? - Una conversación sin filtros sobre accesibilidad digital."
-							conf="Figma.camp"
-							date="19/06/2025"
-							link="speaker/2025/figmacamp"
-						/>
-						<Card
-							heading={
-								<Image
-									src="slash-logo.jpg"
-									alt="Logo SlashMobility"
-									width={220}
-									height={45}
-								/>
-							}
-							title="Mundo unicornio 🦄 testing + accesibilidad"
-							conf="SlahFridays"
-							date="15/11/2024"
-							link="speaker/2024/slashfridays"
-						/>
-						<Card
-							heading={
-								<Image
-									src="devbcn-logo.png"
-									alt="Logo DevBcn"
-									width={150}
-									height={80}
-								/>
-							}
-							title="Mundo unicornio 🦄 testing + accesibilidad"
-							conf="DevBcn"
-							date="13/06/2024"
-							link="speaker/2024/devbcn"
-						/>
-						<Card
-							heading={
-								<Image
-									src="vlc-logo.png"
-									alt="Logo VLC Tech Fest 2024"
-									width={180}
-									height={60}
-								/>
-							}
-							title="Mundo unicornio 🦄 testing + accesibilidad"
-							conf="VLC Tech Fest"
-							date="08/06/2024"
-							link="speaker/2024/slashfridays"
-						/>
-						<Card
-							heading={<>Fabrics</>}
-							title="Mundo unicornio 🦄 testing + accesibilidad"
-							conf="Fabrics"
-							date="06/06/2024"
-							link="speaker/2024/slashfridays"
-						/>
-						<Card
-							heading={
-								<Image
-									src="garaje-logo.png"
-									alt="Logo Garaje de Ideas"
-									width={60}
-									height={60}
-								/>
-							}
-							title="Mejorando la accesibilidad de tu aplicación con react-testing-library 🐙"
-							conf="Garaje de Ideas"
-							date="12/07/2023"
-							link="speaker/2024/slashfridays"
-						/>
-						<Card
-							heading={
-								<Image
-									src="devbcn-logo.png"
-									alt="Logo DevBcn"
-									width={150}
-									height={80}
-								/>
-							}
-							title="Extendiendo los microservicios al frontend: Microfrontends."
-							conf="DevBcn"
-							date="03/07/2023"
-							link="speaker/2024/slashfridays"
-						/>
-						<Card
-							heading={
-								<Image
-									src="activismo-logo.jpg"
-									alt="Logo Activismo Positivo"
-									width={180}
-									height={78}
-								/>
-							}
-							title="Charla con Jordi Turull"
-							conf="Activismo Positivo"
-							date="19/05/2021"
-							link="speaker/2024/slashfridays"
-						/>
-					</ul>
+					<div className={styles.timeline}>
+						<ul className={styles.list}>
+							<li>2026</li>
+							<Card
+								title="Mas humanos que los humanos"
+								conf="Fabrics"
+								date="28/05/2026"
+								link="speaker/2026/fabrics"
+							/>
+							<Card
+								title="Disseny inclusiu, l'accessbilitat digital. Com a eina de transformació social."
+								conf="CUIMP"
+								date="22/04/2026"
+								link="speaker/2026/cuimp"
+							/>
+							<li>2025</li>
+							<Card
+								title="¿La hora de rendir cuentas? - Una conversación sin filtros sobre accesibilidad digital."
+								conf="Figma.camp"
+								date="19/06/2025"
+								link="speaker/2025/figmacamp"
+							/>
+							<Card
+								title="Sesión práctica de accesibilidad Web para Devs"
+								conf="DesignOpsTalx"
+								date="28/02/2025"
+								link="speaker/2025/designopstalx"
+							/>
+							<li>2024</li>
+							<Card
+								title="Mundo unicornio 🦄 testing + accesibilidad"
+								conf="SlahFridays"
+								date="15/11/2024"
+								link="speaker/2024/slashfridays"
+							/>
+							<Card
+								title="Mundo unicornio 🦄 testing + accesibilidad"
+								conf="DevBcn"
+								date="13/06/2024"
+								link="speaker/2024/devbcn"
+							/>
+							<Card
+								title="Mundo unicornio 🦄 testing + accesibilidad"
+								conf="VLC Tech Fest"
+								date="08/06/2024"
+								link="speaker/2024/vlctechfest"
+							/>
+							<Card
+								title="Mundo unicornio 🦄 testing + accesibilidad"
+								conf="Fabrics"
+								date="06/06/2024"
+								link="speaker/2024/fabrics"
+							/>
+							<li>2023</li>
+							<Card
+								title="Mejorando la accesibilidad de tu aplicación con react-testing-library 🐙"
+								conf="Garaje de Ideas"
+								date="12/07/2023"
+								link="speaker/2023/garajedeideas"
+							/>
+							<Card
+								title="Extendiendo los microservicios al frontend: Microfrontends."
+								conf="DevBcn"
+								date="03/07/2023"
+								link="speaker/2023/devbcn"
+							/>
+							<li>2021</li>
+							<Card
+								title="Charla con Jordi Turull"
+								conf="Activismo Positivo"
+								date="19/05/2021"
+								link="speaker/2021/activismopositivo"
+							/>
+						</ul>
+					</div>
 				</section>
 			</main>
 		</>
