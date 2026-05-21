@@ -12,16 +12,16 @@
 		"type-check": "tsc --noEmit"
 	},
 	"dependencies": {
-		"next": "16.2.2",
-		"react": "19.2.4",
-		"react-dom": "19.2.4"
+		"next": "16.2.6",
+		"react": "19.2.6",
+		"react-dom": "19.2.6"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.4.10",
-		"@types/node": "25.5.2",
-		"@types/react": "19.2.14",
+		"@biomejs/biome": "2.4.15",
+		"@types/node": "25.9.1",
+		"@types/react": "19.2.15",
 		"@types/react-dom": "19.2.3",
-		"typescript": "6.0.2"
+		"typescript": "6.0.3"
 	},
 	"packageManager": "pnpm@8.6.12+sha1.a2f983fbf8f2531dc85db2a5d7f398063d51a6f3"
 }

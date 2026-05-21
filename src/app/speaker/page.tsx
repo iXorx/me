@@ -41,6 +41,12 @@ export default function Speaker() {
 								link="speaker/2026/fabrics"
 							/>
 							<Card
+								title="La accesibilidad del futuro en el GAAD de Plexus"
+								conf="Plexus"
+								date="21/05/2026"
+								link="speaker/2026/plexus"
+							/>
+							<Card
 								title="Disseny inclusiu, l'accessbilitat digital. Com a eina de transformació social."
 								conf="CUIMP"
 								date="22/04/2026"

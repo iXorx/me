@@ -1,5 +1,4 @@
 import Link from "next/link";
-import type React from "react";
 import styles from "./Card.module.css";
 
 export function Card({
