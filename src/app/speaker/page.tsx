@@ -1,8 +1,12 @@
-import Head from "next/head";
+import type { Metadata } from "next";
 import Image from "next/image";
 import { Card } from "@/components/card/Card";
 import { Header, Section } from "@/components/header/Header";
 import styles from "./page.module.css";
+
+export const metadata: Metadata = {
+	title: "Speaker",
+};
 
 export const viewport = {
 	themeColor: "#933f99",
@@ -11,9 +15,6 @@ export const viewport = {
 export default function Speaker() {
 	return (
 		<>
-			<Head>
-				<title lang="en">Speaker</title>
-			</Head>
 			<Header section={Section.Speaker}>
 				<i lang="en">Speaker</i>
 			</Header>
@@ -34,6 +35,12 @@ export default function Speaker() {
 					<div className={styles.timeline}>
 						<ul className={styles.list}>
 							<li>2026</li>
+							<Card
+								title="Asteroide A11y-B-612"
+								conf="Barcelona Software Crafters"
+								date="17/10/2026"
+								link="speaker/2026/crafters"
+							/>
 							<Card
 								title="Mas humanos que los humanos"
 								conf="Fabrics"

@@ -1,8 +1,8 @@
 import type { Metadata, Viewport } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Header, Section } from "@/components/header/Header";
 import { SpeakerLink } from "@/components/links/SpeakerLink";
-import Image from "next/image";
 import styles from "../../page.module.css";
 
 export const metadata: Metadata = {
@@ -23,7 +23,15 @@ export default function DevBcn() {
 				<SpeakerLink />
 				<p>
 					Cada año WebAim estudia el estado global de la accesibilidad
-					analizando el top 1 millón de homepages (<a href="https://webaim.org/projects/million/" lang="en">1 Milion Project</a>). En el análisis de febrero de 2024 se detectaron cerca de 50 millones de errores diferentes con una media de 50 errores por página web. Lo más curioso es que el 96% de los errores se pueden agrupar en 6 categorías y éstas han sido las mismas durante los 6 años del estudio.
+					analizando el top 1 millón de homepages (
+					<a href="https://webaim.org/projects/million/" lang="en">
+						1 Milion Project
+					</a>
+					). En el análisis de febrero de 2024 se detectaron cerca de 50
+					millones de errores diferentes con una media de 50 errores por página
+					web. Lo más curioso es que el 96% de los errores se pueden agrupar en
+					6 categorías y éstas han sido las mismas durante los 6 años del
+					estudio.
 				</p>
 				<p>
 					En este charla vamos a unir dos grandes unicornios de nuestra
@@ -45,27 +53,18 @@ export default function DevBcn() {
 				</p>
 				<p className={styles.image}>
 					<Image
-						src="/speaker/devbcn24.jpg"
+						src="/speaker/fabrics24.jpg"
 						alt="Captura de pantalla del video de la charla"
 						fill
 						style={{ objectFit: "contain" }}
 					/>
 				</p>
 				<h2>
-					Más sobre <i lang="en">DevBcn</i>
+					Más sobre Fabrics
 				</h2>
 				<p>
-					Conferencia multidisciplinar (antigua JBCNConf) creada para
-					desarrolladores y por desarrolladores, para aprender y compartir sobre
-					las diferentes tecnologías de software modernas que se utilizan en las
-					empresas.
+					La primera edición de Fabrics, nuestro evento anual de Tecnología, Datos, Privacidad y Seguridad, reunió a la comunidad tecnológica para explorar cómo la innovación está dando forma al futuro de la moda. El evento contó con más de 200 asistentes de diferentes equipos, reflejando un impulso compartido por aprender, crecer y superar límites.
 				</p>
-				<p>
-					Antigua JBCNConf, ahora con 7 temas sobre Java, JVM, lenguajes
-					nativos, nube, DevOps, Kubernetes, frontend, Agile, Big Data, Machine
-					Learning e IA
-				</p>
-				<p>Hospitalet de llobregat, Barcelona, España</p>
 				<p>¡Gracias por la oportunidad!</p>
 			</main>
 		</>

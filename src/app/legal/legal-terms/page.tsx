@@ -1,6 +1,9 @@
-import type { Viewport } from "next";
-import Head from "next/head";
+import type { Metadata, Viewport } from "next";
 import { Header } from "@/components/header/Header";
+
+export const metadata: Metadata = {
+	title: "Aviso legal",
+};
 
 export const viewport: Viewport = {
 	themeColor: "#fff",
@@ -8,10 +11,6 @@ export const viewport: Viewport = {
 export default function LegalTerms() {
 	return (
 		<>
-			<Head>
-				<title>Aviso legal</title>
-				<meta name="theme-color" content="var(--accent)" />
-			</Head>
 			<Header>Aviso legal</Header>
 			<main>
 				<p>Este es el aviso legal de la página.</p>

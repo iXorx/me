@@ -1,10 +1,13 @@
-import type { Viewport } from "next";
-import Head from "next/head";
+import type { Metadata, Viewport } from "next";
 import Link from "next/link";
 import { Feedback } from "@/components/feedback/Feedback";
 import { Header, Section } from "@/components/header/Header";
 import { SpeakerLink } from "@/components/links/SpeakerLink";
 import styles from "./page.module.css";
+
+export const metadata: Metadata = {
+	title: "Mundo unicornio 🦄 testing + accesibilidad",
+};
 
 export const viewport: Viewport = {
 	themeColor: "#573697",
@@ -13,9 +16,6 @@ export const viewport: Viewport = {
 export default function MundoUnicornio() {
 	return (
 		<>
-			<Head>
-				<title>Mundo unicornio 🦄 testing + accesibilidad</title>
-			</Head>
 			<Header section={Section.Notes}>
 				Mundo unicornio 🦄 testing + accesibilidad
 			</Header>

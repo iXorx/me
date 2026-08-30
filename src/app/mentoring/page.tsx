@@ -1,6 +1,9 @@
-import type { Viewport } from "next";
-import Head from "next/head";
+import type { Metadata, Viewport } from "next";
 import { Header, Section } from "@/components/header/Header";
+
+export const metadata: Metadata = {
+	title: "Mentoring",
+};
 
 export const viewport: Viewport = {
 	themeColor: "#d04a03",
@@ -9,10 +12,6 @@ export const viewport: Viewport = {
 export default function Mentoring() {
 	return (
 		<>
-			<Head>
-				<title>Mentoring</title>
-				<meta name="theme-color" content="var(--mentoring)" />
-			</Head>
 			<Header section={Section.Mentoring}>
 				<i lang="en">Mentoring</i>
 			</Header>

@@ -1,13 +1,14 @@
-import Head from "next/head";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Header } from "@/components/header/Header";
+
+export const metadata: Metadata = {
+	title: "Mapa web",
+};
 
 export default function SiteMap() {
 	return (
 		<>
-			<Head>
-				<title>Mapa web</title>
-			</Head>
 			<Header>Mapa web</Header>
 			<main>
 				<ul>

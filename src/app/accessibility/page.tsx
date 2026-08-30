@@ -1,6 +1,9 @@
-import type { Viewport } from "next";
-import Head from "next/head";
+import type { Metadata, Viewport } from "next";
 import { Header, Section } from "@/components/header/Header";
+
+export const metadata: Metadata = {
+	title: "Accesibilidad",
+};
 
 export const viewport: Viewport = {
 	themeColor: "#32586d",
@@ -9,9 +12,6 @@ export const viewport: Viewport = {
 export default function Accessibility() {
 	return (
 		<>
-			<Head>
-				<title>Accesibilidad</title>
-			</Head>
 			<Header section={Section.Accessibility}>Accesibilidad</Header>
 			<main>
 				<p>

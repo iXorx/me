@@ -1,3 +1,13 @@
+.image {
+	display: block;
+	position: relative;
+	width: 100%;
+	max-width: 960px;
+	aspect-ratio: 16 / 9;
+	height: auto;
+	object-fit: contain;
+}
+
 .timeline {
 	position: relative;
 }

@@ -13,7 +13,7 @@ export const viewport: Viewport = {
 	themeColor: "#933f99",
 };
 
-export default function SlashFridays() {
+export default function DevBcn() {
 	return (
 		<>
 			<Header section={Section.Speaker}>
@@ -43,10 +43,10 @@ export default function SlashFridays() {
 					herramientas que nos ofrece el navegador para detectar estos fallos.
 				</p>
 				<p>
-					<a href="https://www.youtube.com/watch?v=_48ZTyHViCU">
+					<a href="https://www.youtube.com/watch?v=SuGQihTcIHg">
 						<span className={styles.image}>
 							<Image
-								src="/speaker/slash-speaker.png"
+								src="/speaker/vlc.png"
 								alt="Captura de pantalla del video de la charla"
 								fill
 							/>
@@ -62,28 +62,19 @@ export default function SlashFridays() {
 				</p>
 
 				<h2>
-					Más sobre <i lang="en">SlashFridays</i>
+					Más sobre <i lang="en">VLC Tech Fest</i>
 				</h2>
-				<a href="https://slashmobility.com/blog/2024/11/accesibilidad-digital-como-construir-un-mundo-mas-inclusivo/">
-					Post del blog mencionado la charla.
-				</a>
 				<p>
-					Repasamos con En unos días entra en vigor la European Accessibility Act (EAA), una directiva que obligará a todas las empresas que operan en la Unión Europea a cumplir con estrictos requisitos de accesibilidad.
-
-					En esta charla intentaremos mantener una conversación real entre compañeros que ya se enfrentan al reto de hacer accesibles sus productos y servicios digitales. Hablaremos de forma abierta sobre resistencias, errores comunes, decisiones complejas y sobre cómo actuar cuando ya no hay más margen para excusas.
-
-					Diseño, código, cultura, responsabilidad: es hora de hablar de todo esto sin adornos ni tapujos.
-
-					· Jueves 19 de junio de 2025
-					· 18,00 (hora de Madrid)
-					· Remoto 100% por Zoom con subtítulos automatizados
-
-					Participantes:
-					Jorge Rebate, UX Lead en Fundación ONCE
-					Jordi Turull, Frontend Tech Lead MANGO
-					Jorge Rández, Accessibility Expert en Banco Sabadell
-					Raúl Marín, Figma.camp
+					VLCTechFest es un día de charlas por y para las comunidades tecnológicas de la Comunidad Valenciana. Un evento para aprender, inspirarse y hacer networking en un ambiente abierto y colaborativo.
 				</p>
+				<p>
+					Siguiendo el formato de conferencias con múltiples tracks simultáneos, ofrecemos charlas para todos los gustos, con espacio para preguntas y momentos dedicados a la interacción entre asistentes.
+				</p>
+				<p>
+					Es un festival donde la participación es clave. Por eso, es un evento gratuito y de acceso libre hasta completar aforo. Desde su primera edición en 2018, donde más de 120 asistentes nos acompañaron, VLCTechFest ha crecido y evolucionado con cada edición.
+
+				</p>
+				<p>¡Gracias por la oportunidad!</p>
 			</main>
 		</>
 	);

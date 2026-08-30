@@ -1,10 +1,12 @@
-import type { Viewport } from "next";
-import Head from "next/head";
+import type { Metadata, Viewport } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import { Header, Section } from "@/components/header/Header";
 import { SpeakerLink } from "@/components/links/SpeakerLink";
-import styles from "./page.module.css";
+import styles from "../../page.module.css";
+
+export const metadata: Metadata = {
+	title: "CUIMP",
+};
 
 export const viewport: Viewport = {
 	themeColor: "#933f99",
@@ -13,74 +15,40 @@ export const viewport: Viewport = {
 export default function FigmaCamp() {
 	return (
 		<>
-			<Head>
-				<title lang="en">Figma Camp</title>
-			</Head>
 			<Header section={Section.Speaker}>
-				<i lang="en">Figma Camp</i>
+				CUIMP: Disseny inclusiu: l'accessibilitat digital com a eina de transformació social
 			</Header>
 			<main>
 				<SpeakerLink />
-				<h2>Mundo unicornio 🦄 testing + accesibilidad</h2>
+				<h2>CUIMPB</h2>
 				<p>
-					Cada año WebAim estudia el estado global de la accesibilidad
-					analizando el top 1 millón de homepages (
-					<a href="https://webaim.org/projects/million/" lang="en">
-						1 Milion Project
-					</a>
-					). En el análisis de febrero de 2024 se detectaron cerca de 50
-					millones de errores diferentes con una media de 50 errores por página
-					web. Lo más curioso es que el 96% de los errores se pueden agrupar en
-					6 categorías y éstas han sido las mismas durante los 6 años del
-					estudio.
+					La inteligencia artificial nos ayuda a crear más rápido que nunca, pero no todo es IA: la accesibilidad digital necesita la mirada humana, el testing real con usuarios y un compromiso ético con la inclusión. Este curso ofrece una introducción práctica y profesional a la accesibilidad digital y a las competencias esenciales para diseñar y desarrollar productos digitales inclusivos en el contexto actual. El objetivo es proporcionar herramientas técnicas, metodologías de trabajo y conocimientos sobre los estándares de accesibilidad (WCAG), así como fomentar la reflexión sobre la responsabilidad profesional en el uso de herramientas de IA y las claves para implementar la accesibilidad en proyectos reales con impacto social verificable.
 				</p>
 				<p>
-					En este charla vamos a unir dos grandes unicornios de nuestra
-					industria: los tests y la accesibilidad y veremos cuáles son y que
-					podemos hacer para evitar repetir siempre los mismos errores en
-					nuestras aplicaciones, protegiéndonos con el uso de unit test con{" "}
-					<i lang="en">react-testing-library</i>. Como base, usaremos una
-					aplicación hecha en <i lang="en">React</i> para ver también las
-					herramientas que nos ofrece el navegador para detectar estos fallos.
+					En la mesa redonda se pretende dar respuesta a por qué la accesibilidad falla en la práctica y cómo podemos cambiarlo desde dentro de los equipos. Se abordará la creación de mecanismos que aseguren su cumplimiento y la construcción de una cultura compartida entre diseñadores y desarrolladores en la que las buenas prácticas no dependan de la buena voluntad de cada uno, sino de los procesos que las hacen inevitables.
 				</p>
 				<p>
-					<a href="https://www.youtube.com/watch?v=hHtQxkmNtZw">
+					<a href="https://www.youtube.com/live/SoNHEq2q9Nw?si=gcBAqULRbOReLKln">
 						<span className={styles.image}>
 							<Image
-								src="slash-speaker.png"
+								src="/speaker/plexus.png"
 								alt="Captura de pantalla del video de la charla"
 								fill
 							/>
 						</span>
-						Enlace al video de <i lang="en">Youtube</i>
+						<span>Enlace al video de <i lang="en">Youtube</i></span>
 					</a>
 				</p>
-				<p>
-					Ver las <Link href="/notes/mundo-unicornio">notas de la charla</Link>{" "}
-					y <Link href="/feedback/mundo-unicornio">dar feedback</Link>
-				</p>
-
 				<h2>
-					Más sobre <i lang="en">SlashFridays</i>
+					Más sobre CUIMPB
 				</h2>
-				<a href="https://slashmobility.com/blog/2024/11/accesibilidad-digital-como-construir-un-mundo-mas-inclusivo/">
-					Post del blog mencionado la charla.
+
+				<a href="https://cuimpb.cat/ca/curs/355-accessibilitat-digital">
+					Disseny inclusiu: l'accessibilitat digital com a eina de transformació social.
 				</a>
 				<p>
-					En el ADN Slash están inscritas las ganas de aprender y compartir
-					conocimiento. Por ello, los viernes alternos{" "}
-					<i lang="en">Slashmobility</i> organiza las famosas SlashFridays, una
-					iniciativa para estar al día de las novedades del sector, para
-					aprender de los demás, generar conocimiento y motivar a su equipo. La
-					temática que tratan es amplia: innovación, tendencias del mercado,
-					tecnologías disruptivas, aprendemos de expertos colaboradores externos
-					que nos hablan de su modelo de negocio, también hablan sobre diseño o
-					desarrollo, entre otros. Al fin y al cabo, un espacio donde compartir
-					conocimiento y generar networking.
+					La finalidad del CUIMPB - Centre Ernest Lluch es la gestión del centro permanente de la Universidad Internacional Menéndez Pelayo (UIMP) en Barcelona. Nuestro centro universitario coordina y desarrolla las actividades propias de la UIMP: centro universitario de alta cultura, investigación y especialización, en el que convergen actividades de distintos grados y especialidades universitarias, y que tiene por misión difundir la cultura y la ciencia, así como fomentar relaciones de intercambio e información científica y cultural de interés internacional e interregional.
 				</p>
-				<a href="https://slashmobility.com/blog/2019/01/slashfriday-tu-espacio-de-conocimiento-y-networking/">
-					Más información de <i lang="en">SlashFridays</i>
-				</a>
 				<p>¡Gracias por la oportunidad!</p>
 			</main>
 		</>

@@ -1,6 +1,9 @@
-import type { Viewport } from "next";
-import Head from "next/head";
+import type { Metadata, Viewport } from "next";
 import { Header } from "@/components/header/Header";
+
+export const metadata: Metadata = {
+	title: "Política de privacidad",
+};
 
 export const viewport: Viewport = {
 	themeColor: "#fff",
@@ -9,10 +12,6 @@ export const viewport: Viewport = {
 export default function PrivacyPolicy() {
 	return (
 		<>
-			<Head>
-				<title>Política de privacidad</title>
-				<meta name="theme-color" content="var(--accent)" />
-			</Head>
 			<Header>Política de privacidad</Header>
 			<main>
 				<strong>
